@@ -70,11 +70,7 @@ app.post('/create-user', (req, res) => {
 // 3. Get all user details API
 app.get('/get-details', (req, res) => {
     try {
-        if (req.session.user) {
-            res.status(200).json(users);
-        } else {
-            res.status(404).json({ success: false, message: 'Users not found' });
-        }
+        res.status(200).json(users);
     } catch (error) {
         res.status(500).json({ success: false, message: 'Unexpected error occurred' });
     }
