@@ -1,0 +1,4 @@
+node_modules/
+
+# run this command to remove node_modules from git
+# git rm -r --cached node_modules
